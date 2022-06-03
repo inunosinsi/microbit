@@ -4,7 +4,7 @@ def convert(per):
     return int(1023 * per / 100)
 
 hz = 20 # 周波数 Hz
-set_analog_period(hz)
+pin0.set_analog_period(hz)
 
 duty = 1
 add = 1
