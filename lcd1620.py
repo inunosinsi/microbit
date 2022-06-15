@@ -1,6 +1,11 @@
 ##########################################################################
 # reference                                                              #
 # https://github.com/shaoziyang/microbit-lib/tree/master/lcd/I2C_LCD1602 #
+# usage                                                                  #
+# VCC : 3V                                                               #
+# GND : GND                                                              #
+# SDA : P20                                                              #
+# SCL : P19                                                              #
 ##########################################################################
 
 from microbit import *
