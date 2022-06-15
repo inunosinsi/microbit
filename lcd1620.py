@@ -1,7 +1,12 @@
 ##########################################################################
 # reference                                                              #
 # https://github.com/shaoziyang/microbit-lib/tree/master/lcd/I2C_LCD1602 #
+#                                                                        #
+# description                                                            #
+# https://onl.bz/nH2bjyt                                                 #
+#                                                                        #
 # usage                                                                  #
+# lcd : microbit                                                         #
 # VCC : 3V                                                               #
 # GND : GND                                                              #
 # SDA : P20                                                              #
@@ -13,7 +18,7 @@ from microbit import *
 #LCD_I2C_ADDR=63	# PCF8574A(0x3F)
 LCD_I2C_ADDR=39		# PCF8574(0x27)
 
-class LCD1620():
+class LCD1602():
     def __init__(self):
         self.buf = bytearray(1)
         self.BK = 0x08
@@ -85,7 +90,7 @@ class LCD1620():
             for i in range(1, len(s)):
                 self.char(ord(s[i]))
 
-l = LCD1620()
+l = LCD1602()
 l.puts("Hello microbit!")
 n = 0
 while 1:
