@@ -8,7 +8,7 @@ radio.on()
 
 i = 0
 while True:
-    if button_a.is_pressed():
-        msg = radio.receive()
-        print(msg)
-        sleep(300)
+	if button_a.is_pressed():
+		msg = radio.receive()
+		print(msg)
+		sleep(300)
