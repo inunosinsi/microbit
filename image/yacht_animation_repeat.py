@@ -26,6 +26,7 @@ while True:
 
     sleep(1000)
     
+    # リスト内の列を左にシフト
     for row in range(0, len(mat)):
         mat[row][len(mat[0])-1] = mat[row][0]
         for col in range(0, len(mat[0])-1):
