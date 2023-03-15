@@ -13,7 +13,7 @@ for i in range(0, len(mat)+1):
     coord = ""
     for vec in mat:
     	for v in vec:
-        	coord += str(v)
+            coord += str(v)
         coord += ":"
 
     yacht = Image(coord)
