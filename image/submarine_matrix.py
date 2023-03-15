@@ -8,12 +8,11 @@ mat = [
     [9,9,9,9,9]
 ]
 
-blueprint = ""
+coord = ""
 for vec in mat:
     for v in vec:
-        blueprint += str(v)
-    blueprint += ":"
+        coord += str(v)
+    coord += ":"
 
-submarine = Image(blueprint)
-
+submarine = Image(coord)
 display.show(submarine)
