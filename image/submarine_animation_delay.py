@@ -9,7 +9,7 @@ mat = [
 ]
 
 icons = []
-for i in range(0, 6):
+for i in range(0, len(mat)+1):
     coord = ""
     for vec in mat:
         for v in vec:
