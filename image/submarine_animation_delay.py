@@ -19,8 +19,8 @@ for i in range(0, 6):
     icons.append(Image(coord))
     
     # リスト内の行を下にシフト
-    for j in range(4, 0, -1):
-        mat[j] = mat[j-1]
+    for row in range(4, 0, -1):
+        mat[row] = mat[row-1]
     mat[0] = [0,0,0,0,0]
 
 display.show(icons, delay=1000)
