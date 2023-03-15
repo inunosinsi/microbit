@@ -8,18 +8,18 @@ mat = [
     [9,9,9,9,9]
 ]
 
-for i in range(0, 6):
+for i in range(0, 5):
     if i > 0:
         for j in range(4, 0, -1):
             mat[j] = mat[j-1]
         mat[0] = [0,0,0,0,0]
     
-    blueprint = ""
+    coord = ""
     for vec in mat:
         for v in vec:
-            blueprint += str(v)
-        blueprint += ":"
+            coord += str(v)
+        coord += ":"
 
-    submarine = Image(blueprint)
+    submarine = Image(coord)
     display.show(submarine)
     sleep(1000)
