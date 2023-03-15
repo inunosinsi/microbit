@@ -10,9 +10,9 @@ mat = [
 
 coord = ""
 for vec in mat:
-	for v in vec:
-		coord += str(v)
-	coord += ":"
+    for v in vec:
+        coord += str(v)
+    coord += ":"
 
 yacht = Image(coord)
 display.show(yacht)
