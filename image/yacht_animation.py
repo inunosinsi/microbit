@@ -17,11 +17,11 @@ for i in range(0, len(mat)+1):
         coord += ":"
 
     yacht = Image(coord)
-    icons.append(yacht)
+    display.show(yacht)
+    sleep(1000)
 
+    # リスト内の列を左にシフト
     for row in range(0, len(mat)):
         for col in range(0, len(mat[0])-1):
             mat[row][col] = mat[row][col+1]
         mat[row][len(mat[0])-1] = 0
-
-display.show(icons, delay=1000)
