@@ -1,0 +1,4 @@
+$ python3 receiver.py 
+x:-548
+y:172
+z:-928
