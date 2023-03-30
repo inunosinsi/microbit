@@ -5,7 +5,10 @@ uart.init()
 
 while True:
     x, y, z = accelerometer.get_values()
-    print("x:"+str(x))
-    print("y:"+str(y))
-    print("z:"+str(z))
+    uart.write("x:"+str(x))
+    uart.write("\r\n")
+    uart.write("y:"+str(y))
+    uart.write("\r\n")
+    uart.write("z:"+str(z))
+    uart.write("\r\n")
     sleep(1000)
