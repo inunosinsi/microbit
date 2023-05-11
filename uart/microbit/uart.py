@@ -7,7 +7,7 @@ while True:
         display.show(Image.YES)
         uart.write(b'0')
         sleep(1000)
-    if button_b.is_pressed():
+    elif button_b.is_pressed():
         display.show(Image.YES)
         uart.write(b'1')
         sleep(1000)
